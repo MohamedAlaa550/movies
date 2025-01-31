@@ -1,0 +1,30 @@
+.progress-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: conic-gradient(#29d40b 71%, #222 71%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.progress-circle::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progress-text {
+  position: relative;
+  z-index: 1;
+}
+
+.progress-circle .progress-text {
+  font-size: 12px;
+}
